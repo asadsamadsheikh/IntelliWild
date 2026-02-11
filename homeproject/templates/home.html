@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intelliwild</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">Intelliwild</div>
+
+    <nav class="nav-links">
+        <a href="#">ENDANGERED SPECIES</a>
+        <a href="#">ZOO</a>
+        <a href="#">SANCTUARY</a>
+        <a href="#">VETERINARY HOSPITAL</a>
+        <a href="#">Account</a>
+    </nav>
+</header>
+
+<!-- MAIN CONTENT -->
+<section class="heroes">
+    <h1>Environmental Heroes</h1>
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Carl_Jones_Mauritius.jpg">
+        <div>
+            <h2>Dr. Carl Jones</h2>
+            <p>World-renowned conservation biologist known for saving endangered species.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/David_Attenborough_2015.jpg">
+        <div>
+            <h2>Sir David Attenborough</h2>
+            <p>Legendary natural historian who educated generations on biodiversity.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Sunita_Narain.jpg">
+        <div>
+            <h2>Sunita Narain</h2>
+            <p>Indian environmentalist working on sustainability and conservation.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CHAT ICON -->
+<div class="chat-icon" onclick="toggleChat()">🤖</div>
+
+<!-- CHATBOT -->
+<div class="chatbot-container" id="chatbot">
+    <div class="chatbot-header">
+        Wildlife AI Chatbot
+        <span class="close-btn" onclick="toggleChat()">×</span>
+    </div>
+
+    <div class="chatbot-body" id="chatBody">
+        <div class="bot-message">
+            Hello 👋 Ask me about wildlife conservation!
+        </div>
+    </div>
+
+    <div class="chatbot-input">
+        <input type="text" id="userInput" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<!-- Back To Top Button --> 
+<div class="top"> 
+    <a href="#" class="topbtn">
+        <i class="fa-solid fa-arrow-up"></i> Back to Top
+    </a> 
+</div> 
+    <footer class="footer"> 
+        <div class="foot_bar"> <!-- LEFT : ALL TEXT --> 
+            <div class="footer-text"> 
+                <div class="menu"> 
+                    <h3>Main Menu</h3> 
+                    <a href="http://127.0.0.1:5500/home/home.html">Home</a> 
+                    <a href="http://127.0.0.1:5500/endangered/endangered.html">Endangered Species</a> 
+                    <a href="http://127.0.0.1:5500/zoo/zoo.html">Zoo</a> 
+                    <a href="http://127.0.0.1:5500/sanctuary/sanctuary.html">Sanctuary</a> 
+                    <a href="http://127.0.0.1:5500/veterinary/veterinary.html">Veterinary Hospital</a> 
+                    <a href="http://127.0.0.1:5000/register">Account</a> 
+                </div> 
+                <div class="contact"> 
+                    <h3>Contact</h3>
+
+                    <p>📞 +91 8484076184</p> 
+                    <p>📞 +91 7350013566</p> 
+                    <p>Public Veterinary Helpline</p> 
+                    <p>☎ 1962</p> </div> <div class="social">
+
+                    <h3>Social</h3> 
+                    <a href="#">Facebook</a> 
+                    <a href="https://www.instagram.com/asad_sheikh922/">Instagram</a> 
+                    <a href="https://www.linkedin.com/in/ashlesha-mohod-040513337/">LinkedIn</a> 
+                </div> 
+            </div> 
+        <!-- RIGHT : GOOGLE MAP (60%) --> 
+            <div class="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.6876501565425!2d73.85822277416774!3d18.4524857712525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac307f7a82f%3A0x3ac431343224b00b!2sRajiv%20Gandhi%20Zoological%20Park%20%26%20Wildlife%20Research%20Center!5e0!3m2!1sen!2sin!4v1766845359568!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> loading="lazy" allowfullscreen> 
+
+                </iframe> 
+            </div>
+        </div> 
+        <div class="copy"> 
+            <p>© 2025 Smart Wildlife Management System | All Rights Reserved</p> 
+        </div> 
+    </footer>
+
+<script src="{{ url_for('static', filename='home.js') }}"></script>
+</body>
+</html>
