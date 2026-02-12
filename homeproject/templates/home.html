@@ -22,31 +22,64 @@
 
 <!-- MAIN CONTENT -->
 <section class="heroes">
-    <h1>Environmental Heroes</h1>
-
-    <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Carl_Jones_Mauritius.jpg">
-        <div>
-            <h2>Dr. Carl Jones</h2>
-            <p>World-renowned conservation biologist known for saving endangered species.</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/David_Attenborough_2015.jpg">
-        <div>
-            <h2>Sir David Attenborough</h2>
-            <p>Legendary natural historian who educated generations on biodiversity.</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Sunita_Narain.jpg">
-        <div>
-            <h2>Sunita Narain</h2>
-            <p>Indian environmentalist working on sustainability and conservation.</p>
-        </div>
-    </div>
+    <h1 class="title">Environmental Heroes</h1> 
+        <div class="cards"> 
+        <!-- CARD 1 --> 
+             <div class="card"> 
+                <img src="{{ url_for('static', filename='carl.jpg') }}" alt="Dr Carl Jones"> 
+                <div class="content"> 
+                    <h2>Dr. Carl Jones</h2> 
+                    <p> Dr. Carl Jones is a world-renowned conservation biologist known for saving critically endangered species from extinction. His work on the Mauritius kestrel, echo parakeet, and pink pigeon helped restore ecosystems previously thought lost. He has dedicated over 40 years to wildlife rescue and habitat restoration. </p> 
+                </div> 
+        </div> 
+        <!-- CARD 2 --> 
+            <div class="card"> 
+                <img src="marlin.webp" alt="Marlin Perkins"> 
+                <div class="content"> 
+                    <h2>Marlin Perkins</h2> 
+                    <p> Marlin Perkins was an influential zoologist and television host of “Wild Kingdom." He inspired millions to care about wildlife through groundbreaking storytelling. His research and conservation missions made him a global voice for endangered species. </p> 
+                </div> 
+            </div> 
+        <!-- CARD 3 --> 
+            <div class="card"> 
+                <img src="jadav.webp" alt="Jadav Payeng"> 
+                <div class="content"> 
+                    <h2>Jadav Payeng</h2> 
+                    <p> Known as the “Forest Man of India,” Jadav Payeng single-handedly planted more than 40 million trees, transforming a barren sandbar into a thriving forest ecosystem. His efforts preserved wildlife, stabilized soil, and revived biodiversity across Majuli Island. </p> 
+                </div> 
+            </div> 
+        <!-- CARD 4 --> 
+            <div class="card"> 
+                <img src="parikshit.jpg" alt="Dr Parikshit Kakati"> 
+                <div class="content"> 
+                    <h2>Dr. Parikshit Kakati</h2> 
+                    <p> Dr. Parikshit Kakati is a respected veterinarian and wildlife rescuer from Assam. He has worked extensively with elephants, rhinos, and rescue operations during floods. His dedication to wildlife health and conservation has made him a role model for young environmentalists. </p> 
+                </div> 
+            </div> 
+            <!-- CARD 5 --> 
+            <div class="card"> 
+                <img src="jane.webp" alt="Jane Goodall"> 
+                <div class="content"> 
+                    <h2>Jane Goodall</h2> 
+                    <p> Jane Goodall is a world-famous primatologist and conservationist known for her groundbreaking research on chimpanzees. Her work transformed wildlife research and global conservation awareness. </p> 
+                </div> 
+            </div> 
+            <!-- CARD 6 --> 
+             <div class="card"> 
+                <img src="david.webp" alt="David Attenborough"> 
+                <div class="content"> 
+                    <h2>Sir David Attenborough</h2> 
+                    <p> Sir David Attenborough is a legendary broadcaster and natural historian. Through documentaries, he educated generations about nature, climate change, and biodiversity conservation. </p> 
+                </div> 
+            </div> 
+            <!-- CARD 7 --> 
+             <div class="card"> 
+                <img src="sunita.webp" alt="Sunita Narain"> 
+                <div class="content"> 
+                    <h2>Sunita Narain</h2> 
+                    <p> Sunita Narain is an Indian environmentalist who has worked extensively on water conservation, air pollution, and sustainable development policies in India. </p> 
+                </div> 
+            </div> 
 </section>
 
 <!-- CHAT ICON -->

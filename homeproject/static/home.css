@@ -1,9 +1,12 @@
 body {
-    background-image: url("forest-bg.jpg");
     background-size: cover;
     background-position: center;
     min-height: 100vh;
     font-family: Arial, sans-serif;
+   
+}
+.heroes {
+    background: center/cover no-repeat url("background.jpg");
 }
 
 /* NAVBAR */
@@ -54,21 +57,37 @@ body {
 }
 
 /* CARDS */
-.card {
-    display: flex;
-    background: rgba(255,255,255,0.25);
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 30px;
-    max-width: 900px;
-}
+.title { 
+    text-align: center; 
+    font-size: 40px; 
+    margin-bottom: 40px; 
+    margin-top: 7%; }
 
-.card img {
-    width: 150px;
-    height: 150px;
-    border-radius: 15px;
-    margin-right: 20px;
-}
+/* Cards Layout */ 
+.cards { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 40px; } 
+/* Card Style */ 
+.card { 
+    width: 60%; 
+    margin: auto; 
+    background: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(6px); 
+    border-radius: 20px; 
+    display: flex; 
+    gap: 20px; 
+    padding: 20px; 
+    transition: 0.4s ease; 
+    cursor: pointer; } 
+.card img { 
+    width: 180px; 
+    height: 180px; 
+    border-radius: 15px; 
+    object-fit: cover; } 
+.card .content { 
+    color: black; 
+    line-height: 1.5; }
 
 /* CHAT ICON */
 .chat-icon {
@@ -173,7 +192,8 @@ body {
     font-weight: bold; 
     display: none; 
     transition: 0.4s; 
-    top: 10px; } 
+    top: 10px; 
+} 
 .topbtn.show { 
     display: inline; 
 } 
