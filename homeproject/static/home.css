@@ -5,8 +5,13 @@ body {
     font-family: Arial, sans-serif;
    
 }
+
+html{
+    scroll-behavior: smooth;
+}
 .heroes {
-    background: center/cover no-repeat url("../static/background.jpg");
+    background: center/cover no-repeat url("/static/background.jpg");
+    object-fit: cover;
 }
 
 /* NAVBAR */
