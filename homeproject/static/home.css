@@ -18,29 +18,39 @@ html{
 .navbar {
     background-color: #d4b24d;   /* mustard color */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;   /* Equal spacing INCLUDING logo */
     align-items: center;
     height: 80px;
+    padding: 0 5px;
 }
 
 /* LOGO */
+/* LOGO CONTAINER */
 .logo {
-    height: 70px;
-    color: #1c7c4c;  /* green */
-    background: cover;
-}
-
-/* NAV LINKS */
-.nav-links {
     display: flex;
-    justify-content: center;   /* space between menu items */
     align-items: center;
 }
 
+/* LOGO IMAGE */
+.logo img {
+    height: 70px;   /* Perfect fit inside 80px navbar */
+    width: 220px;
+    object-fit: cover;
+}
+
+
+/* NAV LINKS CONTAINER */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 60px;   /* Equal distance between menu items */
+}
+
+/* NAV LINKS */
 .nav-links a {
     text-decoration: none;
     color: #1c7c4c;   /* green text */
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 1px;
     transition: 0.3s ease;
 }
@@ -49,6 +59,8 @@ html{
 .nav-links a:hover {
     color: #0f4f2f;   /* darker green */
 }
+
+
 
 
 /* HERO SECTION */
