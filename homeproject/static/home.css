@@ -20,20 +20,21 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 60px;
+    height: 80px;
 }
 
 /* LOGO */
 .logo {
-    font-size: 18px;
-    font-weight: 500;
+    height: 70px;
     color: #1c7c4c;  /* green */
+    background: cover;
 }
 
 /* NAV LINKS */
 .nav-links {
     display: flex;
-    gap: 60px;   /* space between menu items */
+    justify-content: center;   /* space between menu items */
+    align-items: center;
 }
 
 .nav-links a {
