@@ -21,7 +21,7 @@ html{
     justify-content: space-evenly;   /* Equal spacing INCLUDING logo */
     align-items: center;
     height: 80px;
-    padding: 0 5px;
+    padding: 0 2px;
 }
 
 /* LOGO */
@@ -33,9 +33,9 @@ html{
 
 /* LOGO IMAGE */
 .logo img {
-    height: 70px;   /* Perfect fit inside 80px navbar */
-    width: 220px;
-    object-fit: cover;
+    height: 80px;   /* Perfect fit inside 80px navbar */
+    width: 200px;
+    object-fit: contain;
 }
 
 
