@@ -9,10 +9,6 @@ body {
 html{
     scroll-behavior: smooth;
 }
-.heroes {
-    background: center/cover no-repeat url("/static/background.jpg");
-    object-fit: cover;
-}
 
 /* NAVBAR */
 .navbar {

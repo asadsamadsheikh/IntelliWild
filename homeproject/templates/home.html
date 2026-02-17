@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <title>Intelliwild</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
 <!-- NAVBAR -->
-<header class="navbar">
+<header class="navbar" >
     <div class="logo">
         <img src="/static/logo3.png" alt="Logo">
     </div>
 
     <nav class="nav-links">
-        <a href="#">ENDANGERED SPECIES</a>
+        <a href="http://127.0.0.1:5500/IntelliWild/endangered/endangered.html">ENDANGERED SPECIES</a>
         <a href="#">ZOO</a>
         <a href="#">SANCTUARY</a>
         <a href="#">VETERINARY HOSPITAL</a>
@@ -24,7 +25,8 @@
 
 
 <!-- MAIN CONTENT -->
-<section class="heroes">
+<section class="heroes" src="/static/background.jpg" alt="Hero Image" class="hero-image">
+    <img src="/static/background.jpg" alt="Hero Image" class="hero-image">
     <h1 class="title">Environmental Heroes</h1> 
         <div class="cards"> 
         <!-- CARD 1 --> 
